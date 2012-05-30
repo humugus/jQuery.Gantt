@@ -196,7 +196,7 @@
                     if (i >= element.pageNum * settings.itemsPerPage && i < (element.pageNum * settings.itemsPerPage + settings.itemsPerPage)) {
                         ganttLeftPanel
 							.append($('<div class="row name row' + i + ' "/>').append($('<span title="' + entry.name + '" class="fn-label"/>').html(entry.name)))
-							.append($('<div class="row desc row' + i + ' "/>').append($('<span class="fn-label"/>').html(entry.desc)));
+							.append($('<div class="row desc row' + i + ' "/>').append($('<span title="' + entry.desc + '"class="fn-label"/>').html(entry.desc)));
                     }
                 });
                 return ganttLeftPanel;
